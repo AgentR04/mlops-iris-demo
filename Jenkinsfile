@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'main', url: 'https://github.com/<your-username>/mlops-iris-demo.git'
+        git branch: 'main', url: 'https://github.com/AgentR04/mlops-iris-demo.git' , credentialsId: 'rutumehta_04'
       }
     }
     stage('Install Dependencies') {
